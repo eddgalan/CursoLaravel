@@ -1,6 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/laravel,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=laravel,node
-
+.idea
 ### Laravel ###
 /vendor/
 node_modules/
