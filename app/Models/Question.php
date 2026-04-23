@@ -14,16 +14,25 @@ class Question extends Model
     /** @use HasFactory<QuestionFactory> */
     use HasFactory;
 
+    /**
+     * @return BelongsTo
+     */
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class);
     }
 
+    /**
+     * @return BelongsTo
+     */
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
 
+    /**
+     * @return HasMany
+     */
     public function answers(): HasMany
     {
         return $this->hasMany(Answer::class);
